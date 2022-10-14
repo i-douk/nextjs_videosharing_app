@@ -1,7 +1,7 @@
 import React, { useState , useEffect} from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import Router, {useRouter} from 'next/router';
+import {useRouter} from 'next/router';
 import {AiOutlineLogout} from 'react-icons/ai';
 import {BiSearch} from 'react-icons/bi';
 import {IoMdAdd} from 'react-icons/io';
@@ -9,6 +9,7 @@ import Logo from '../utils/tiktfu-logo.png';
 import {GoogleLogin, googleLogout} from '@react-oauth/google';
 import { createOrGetUser } from '../utils';
 import useAuthStore from "../store/authStore";
+import { IUser } from '../types';
 
 
 const Navbar = () => {
