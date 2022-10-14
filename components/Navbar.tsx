@@ -56,7 +56,7 @@ const Navbar = () => {
             </form>
         </div>
         <div>
-          { userProfile ? (
+          { user ? (
             <div className= "flex gap-5 md:gap-10">
               <Link href="/upload">
                 <button className ="rounded-full border-primary-200 hover:border-pink-300 border-2 px-2 md:px-4 text-md font-semibold flex items-center gap-2"> 
@@ -64,14 +64,14 @@ const Navbar = () => {
                   <span className="hidden md:block">Upload</span>
                 </button>
               </Link>
-              {userProfile.image && (
+              {user.image && (
                <Link href="/">
                <>
                    <Image 
                    width ={50}
                    height={50}
                    className = "rounded-full cursor-pointer"
-                   src={userProfile.image}
+                   src={user.image}
                    alt="profile pic"
                    />
                </>
