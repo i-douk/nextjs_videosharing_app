@@ -85,7 +85,7 @@ const Upload = () => {
   };
 
   return (
-    <div className='flex w-full h-full absolute left-0 top-[60px] lg:top-[70px] mb-10 pt-10 lg:pt-20 bg-[#F8F8F8] justify-center'>
+    <div className='flex w-full h-full absolute left-0 top-[90px] lg:top-[70px] mb-10 pt-10 lg:pt-20 bg-[#F8F8F8] justify-center'>
       <div className=' bg-white rounded-lg xl:h-[80vh] flex gap-6 flex-wrap justify-center items-center p-14 pt-6'>
         <div>
           <div>
@@ -117,7 +117,7 @@ const Upload = () => {
                         Up to 10 minutes <br />
                         Less than 2 GB
                       </p>
-                      <p className='bg-[#F51997] text-center mt-8 rounded text-white text-md font-medium p-2 w-52 outline-none'>
+                      <p className='bg-red-300 hover:bg-red-500 text-center mt-8 rounded text-white text-md font-medium p-2 w-52 outline-none'>
                         Select file
                       </p>
                     </div>
@@ -195,7 +195,7 @@ const Upload = () => {
               disabled={videoAsset?.url ? false : true}
               onClick={handlePost}
               type='button'
-              className='bg-[#ee526288] text-white text-md font-medium p-2 rounded w-28 lg:w-44 outline-none'
+              className='cursor-pointer bg-red-300 hover:bg-red-500 text-white text-md font-medium p-2 rounded w-28 lg:w-44 outline-none'
             >
               {savingPost ? 'Posting...' : 'Post'}
             </button>

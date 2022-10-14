@@ -11,6 +11,7 @@
   "dependencies": {
     "@react-oauth/google": "^0.2.8",
     "@sanity/client": "^3.3.0",
+    "algoliasearch": "^4.14.2",
     "axios": "^0.27.2",
     "gapi-script": "^1.2.0",
     "jwt-decode": "^3.1.2",
@@ -19,6 +20,7 @@
     "react-dom": "18.1.0",
     "react-google-login": "^5.2.2",
     "react-icons": "^4.3.1",
+    "react-instantsearch-hooks-web": "^6.36.0",
     "uuidv4": "^6.2.13",
     "zustand": "^4.0.0-rc.1"
   },
