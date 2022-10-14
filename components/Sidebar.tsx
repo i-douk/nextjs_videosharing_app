@@ -32,10 +32,10 @@ const activeLink = "";
             >
               <div className={normalLink}>
                 <p className="text-2xl">
-                  <TiHome />
+                  <TiHome className="text-red-300" />
                 </p>
-                <span className="text-xl hidden xl:block">
-                  Share a rant and gain a tfucoin.
+                <span className="text-red-400 text-xl hidden xl:block">
+                  Free speech entered the chat.
                 </span>
               </div>
             </Link>
