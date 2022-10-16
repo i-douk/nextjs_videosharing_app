@@ -7,7 +7,7 @@ import Link from 'next/link';
 import {HiVolumeUp, HiVolumeOff} from 'react-icons/hi';
 import {BsFillPlayFill , BsFillPauseFill, BsPlay } from 'react-icons/bs';
 import {GoVerified} from 'react-icons/go';
-import { FaLessThanEqual } from 'react-icons/fa';
+
  
 interface IProps {
     post : Video;
@@ -26,7 +26,6 @@ const onVideoPress = () => {
     } else{
         videoRef?.current?.play();
         setPlaying(true);
-
     }
 }
 useEffect(() => {
@@ -84,7 +83,6 @@ useEffect(() => {
                 ref = {videoRef}
                 className="lg:w-[600px] h-[300px] md:h-[400px] md:w-[320px] lg:h-[530px] w-[200px] rounded-2xl cursor-pointer bg-pink-100"
                 >
-
                 </video>
                 </Link>
             {isHover && (
